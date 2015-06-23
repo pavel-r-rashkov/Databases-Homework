@@ -1,0 +1,31 @@
+Normalization
+
+Database normalization is the process of organizing the attributes and tables of a relational database to minimize 
+data redundancy.
+Normalization involves decomposing a table into less redundant (and smaller) tables but without losing information.
+Defining foreign keys in the old table referencing the primary keys of the new ones. The objective is to isolate data 
+so that additions, deletions, and modifications of an attribute can be made in just one table and then propagated 
+through the rest of the database using the defined foreign keys.
+
+Normalization forms:
+
+First normal form
+First normal form deals with the "shape" of a record type.
+Under first normal form, all occurrences of a record type must contain the same number of fields.
+
+Second normal form
+Second and third normal forms deal with the relationship between non-key and key fields.
+Under second and third normal forms, a non-key field must provide a fact about the key, us the whole key,
+and nothing but the key. In addition, the record must satisfy first normal form.
+
+Third normal form
+Third normal form is violated when a non-key field is a fact about another non-key field.
+
+Fourth normal form
+Under fourth normal form, a record type should not contain two or more independent multi-valued facts about an entity.
+In addition, the record must satisfy third normal form.
+
+Fifth normal form
+Fifth normal form deals with cases where information can be reconstructed from smaller pieces of information that 
+can be maintained with less redundancy. Second, third, and fourth normal forms also serve this purpose,
+but fifth normal form generalizes to cases not covered by the others.

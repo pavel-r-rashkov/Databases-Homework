@@ -1,0 +1,18 @@
+Relationships
+
+One-to-one
+In a one-to-one relationship, each row in one database table is linked to 1 and only 1 other row in another table.
+In a one-to-one relationship between Table A and Table B, each row in Table A is linked to another row in Table B.
+The number of rows in Table A must equal the number of rows in Table B.
+
+
+One-to-many
+In a one-to-many relationship, each row in the related to table can be related to many rows in the relating table.
+This allows frequently used information to be saved only once in a table and referenced many times in all other tables.
+In a one-to-many relationship between Table A and Table B, each row in Table A is linked to 0, 1 or many rows in Table B.
+The number of rows in Table A is almost always less than the number of rows in Table B.
+
+Many-to-many
+In a many-to-many relationship, one or more rows in a table can be related to 0, 1 or many rows in another table.
+In a many-to-many relationship between Table A and Table B, each row in Table A is linked to 0, 1 or many rows in 
+Table B and vice versa. A 3rd table called a mapping table is required in order to implement such a relationship.

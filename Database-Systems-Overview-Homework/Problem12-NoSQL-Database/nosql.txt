@@ -1,0 +1,18 @@
+NoSQL databases
+
+A NoSQL database provides a mechanism for storage and retrieval of data that is 
+modeled in means other than the tabular relations used in relational databases.
+Motivations for this approach include simplicity of design, horizontal scaling, and finer control over availability.
+The data structures used by NoSQL databases (e.g. key-value, graph, or document) differ from those used
+in relational databases, making some operations faster in NoSQL and others faster in relational databases.
+The particular suitability of a given NoSQL database depends on the problem it must solve.
+NoSQL databases are increasingly used in big data and real-time web applications. NoSQL systems are also 
+called "Not only SQL" to emphasize that they may also support SQL-like query languages.
+
+NoSQL database examples:
+
+- MongoDB - document model
+- CouchDB - document model
+- Redis - key-value model 
+- Cassandra - wide-column model 
+- Cache - object model 

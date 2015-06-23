@@ -1,0 +1,6 @@
+RDBMS
+
+Relational Database Management Systems (RDBMS) manage data stored in tables.
+RDBMS typically implement creating, altering, deleting tables and relationships between them (database schema).
+Adding, changing, deleting, searching and retrieving of data rows stored in the tables. They have support for the
+SQL language and some of them for transaction management.

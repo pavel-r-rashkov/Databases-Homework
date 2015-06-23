@@ -1,0 +1,37 @@
+Indexes
+
+A database index is a data structure that improves the speed of data retrieval operations on a database table at 
+the cost of additional writes and storage space to maintain the index data structure. 
+Indexes are used to quickly locate data without having to search every row in a database table every time
+a database table is accessed. Indexes can be created using one or more columns of a database table,
+providing the basis for both rapid random lookups and efficient access of ordered records.
+
+Clustered index
+A clustered index is a type of index where the table records are physically re-ordered to match the index. 
+Clustered indexes are efficient on columns that are searched for a range of values. After the row with first value
+is found using a clustered index, rows with subsequent index values are guaranteed to be physically adjacent, 
+thus providing faster access for a user query or an application.
+
+B-Tree
+A B-tree is a tree data structure that keeps data sorted and allows searches, sequential access, insertions, 
+and deletions in logarithmic time. The B-tree is a generalization of a binary search tree in that a node can 
+have more than two children (Comer 1979, p. 123). Unlike self-balancing binary search trees, 
+the B-tree is optimized for systems that read and write large blocks of data.
+B-trees are a good example of a data structure for external memory.
+
+Column-store index
+Unlike regular indexes or heaps, which store data in B-Tree structure (in row-wise fashion),
+the column store index stores data in columnar fashion and uses compression aggressively to 
+reduce the disk I/O needed to serve the query request.
+
+Full-text search index
+A full-text index stores information about significant words and their location within one or more columns of
+a database table. A full-text index is a special type of token-based functional index. The process of building a full-text index differs
+from building other types of indexes. Instead of constructing a B-tree structure based on a value stored
+in a particular row, the Full-Text Engine builds an inverted, stacked, compressed index structure based on
+individual tokens from the text being indexed. 
+
+spatial index
+Spatial Index is like an ordinary index with this difference that Spatial objects are not 1D data points rather
+are in higher dimension space (e.g. 2D) and thus Ordinary indexes such as BTree are not appropriate for indexing
+such data. The well-known spatial Index technique is R-tree
